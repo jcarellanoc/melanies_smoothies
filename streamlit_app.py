@@ -43,5 +43,5 @@ if ingredients_list:
     if insert_time:
         session.sql(my_insert_stmt).collect()
         st.success('Your Smoothie is ordered, ' + name_on_order + '!', icon="✅")
-mydf = smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/all")
-st.dataframe(data=mydf.json(), use_container_width=True)
+#mydf = smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/all")
+#st.dataframe(data=mydf.json(), use_container_width=True)
